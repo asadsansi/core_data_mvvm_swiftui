@@ -25,7 +25,7 @@ struct ContentView: View {
     var body: some View {
         VStack {
             HStack {
-                TextField("Enter Task Name", text: $taskListVM.title).textFieldStyle(RoundedBorderTextFieldStyle())
+                TextField("Enter Task", text: $taskListVM.title).textFieldStyle(RoundedBorderTextFieldStyle())
                 TextField("Enter Description", text: $taskListVM.descrip).textFieldStyle(RoundedBorderTextFieldStyle())
             Button("Save"){
                     taskListVM.save()
