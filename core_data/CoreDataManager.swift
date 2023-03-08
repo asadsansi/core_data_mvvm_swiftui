@@ -73,10 +73,10 @@ class CoreDataManager{
             
             if let err = error{
                 fatalError("Unable to initialize the coredata stack \(err)")
+            }else{
+                print("Successfully loaded data")
             }
         }
     }
-    
-    
     
 }
